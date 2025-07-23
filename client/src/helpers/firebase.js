@@ -1,22 +1,20 @@
+// firebase.js
+
+import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
-import { initializeApp } from "firebase/app";
-import { getEvn } from "./getEnv";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// ✅ Firebase config using .env values
 const firebaseConfig = {
-    apiKey: getEvn('VITE_FIREBASE_API'),
-    authDomain: "yt-mern-blog.firebaseapp.com",
+  apiKey: import.meta.env.VITE_FIREBASE_API,
+  authDomain: "yt-mern-blog-54587.firebaseapp.com",
   projectId: "yt-mern-blog-54587",
-  storageBucket: "yt-mern-blog.appspot.com",
+  storageBucket: "yt-mern-blog-54587.appspot.com",
   messagingSenderId: "1013463220313",
-  appId: "1:1013463220313:web:34bc9843d732ee4be7f678"
-};
+  appId: "1:1013463220313:web:6d3d8af21eb1de2875f148"
+}
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
+// ✅ Initialize Firebase
+const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
 const provider = new GoogleAuthProvider()
 
