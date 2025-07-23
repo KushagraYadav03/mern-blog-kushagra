@@ -8,10 +8,10 @@ import { getEvn } from "./getEnv";
 const firebaseConfig = {
     apiKey: getEvn('VITE_FIREBASE_API'),
     authDomain: "yt-mern-blog.firebaseapp.com",
-    projectId: "yt-mern-blog",
-    storageBucket: "yt-mern-blog.firebasestorage.app",
-    messagingSenderId: "150248092393",
-    appId: "1:150248092393:web:34bc9843d732ee4be7f678"
+  projectId: "yt-mern-blog-54587",
+  storageBucket: "yt-mern-blog.appspot.com",
+  messagingSenderId: "1013463220313",
+  appId: "1:1013463220313:web:34bc9843d732ee4be7f678"
 };
 
 // Initialize Firebase
